@@ -1,0 +1,18 @@
+using python
+read https://www.amazon.in/s?k=bags&crid=2M096C61O4MLT&qid=1653308124&sprefix=ba%2Caps%2C283&ref=sr_pg_1  and parse it with beautifulsoup
+find all
+div with  class="s-card-container s-overflow-hidden aok-relative puis-wide-grid-style puis-wide-grid-style-t2 puis-include-content-margin puis puis-v3gpyfwsnoypgd232yfieockiop s-latency-cf-section s-card-border"
+find all the div
+try find a with class="a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal" and store it in Product_URL
+except Product_URL=""
+try find span with  class="a-size-medium a-color-base a-text-normal" and store it in Names
+except Names =""
+try find span with  class="a-price-whole" and store it in Prices
+except Prices =""
+try find i with  class="a-icon a-icon-star-small a-star-small-5 aok-align-bottom" and store it in Rating
+except Rating =""
+try find span with  class="a-size-base s-underline-text" and store it in Reviews
+except Reviews =""
+
+
+open an excel file and write  Names ,Price, Reviews in it
